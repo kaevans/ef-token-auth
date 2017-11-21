@@ -1,0 +1,12 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+@if (ViewBag.ErrorMessage != null)
+{
+    <p>You have to sign-in to see your profile. Click @Html.ActionLink("here", "RefreshSession", "Home", new { reauth = true }, null) to sign-in.</p>
+}
+<h2>Index</h2>
+
+<p>@ViewBag.Message</p>
+
